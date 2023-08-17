@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">turistiandov2</string>
+    <string name="hoteles">En nuestro pueblo encontraras gran variedad de hoteles, muy comodos, limpios y a un precio accesible, nuestros hoteles cuentan con servicio de restaurante, comedor libre, piscina, sauna, gimnasio y gran variedad de cosas que tienes por descubrir</string>
+    <string name="restaurantes">En nuestros restaurantes encontraras una gran variedad de platillos, asi como encontraras varios restaurantes con la comida tipica de nuestro pueblo asi como los que estan ambientadas de otras regiones</string>
+    <string name="sitios">En nuestro pueblo a pesar de ser pequeño encontraras algunoslugares emblematicos donde harás un dia lleno de momentos especiales.</string>
+    <string name="opcion1">Ingles</string>
+    <string name="opcion2">Italiano</string>
+    <string name="opcion3">Español</string>
+    <string name="opcion4">Sobre mi</string>
+
+    <string name="usuario">USUARIO</string>
+    <string name="contraseña">CONTRASEÑA</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="hotele">Hoteles</string>
+    <string name="restaurante">Restaurantes</string>
+    <string name="sitio">Sitios</string>
+    <string name="ver">Ver más</string>
+    <string name="bienvenido">bienvenido</string>
+    <string name="sobremi">Hola, soy juan, Estudiante de programacion, tengo conocimientos basicos en lenguajes como, java, css, html, android studio, sql server y javascript, ademas de eso tambien soy artista 3D con conocimientos en Maya, 3Ds max, Zbrush, Vray, solidworks y substance painter, en estos programas considero que mi conocimiento es avanzado. :)</string>
+    <string name="contacto">Contacto:</string>
+    <string name="rango">Rango de precio:</string>
+    <string name="telefon">Telefono:</string>
+    <string name="plato">Plato recomendado:</string>
+    <string name="nombre">Nombre:</string>
+
+
+</resources>

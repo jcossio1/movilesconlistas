@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">turistiandov2</string>
+    <string name="hoteles">In our town, you will find a wide variety of hotels, very comfortable, clean, and at an affordable price. Our hotels offer restaurant service, buffet dining, pool, sauna, gym, and a wide variety of things for you to discover.</string>
+    <string name="restaurantes">In our restaurants, you will find a wide variety of dishes. You can also find several restaurants with the typical food of our town as well as those inspired by other regions.</string>
+    <string name="sitios">In our small town, you will find some emblematic places where you will experience a day full of special moments.</string>
+    <string name="opcion1">English</string>
+    <string name="opcion2">Italian</string>
+    <string name="opcion3">Spanish</string>
+    <string name="opcion4">About Me</string>
+
+    <string name="usuario">USERNAME</string>
+    <string name="contraseña">PASSWORD</string>
+    <string name="ingresar">LOGIN</string>
+    <string name="hotele">Hotels</string>
+    <string name="restaurante">Restaurants</string>
+    <string name="sitio">Places</string>
+    <string name="ver">See more</string>
+    <string name="bienvenido">Welcome</string>
+    <string name="sobremi">Hello, I am Juan, a programming student with basic knowledge in languages such as Java, CSS, HTML, Android Studio, SQL Server, and JavaScript. In addition to that, I am also a 3D artist with advanced knowledge in programs like Maya, 3Ds Max, ZBrush, Vray, Solidworks, and Substance Painter. :)</string>
+    <string name="contacto">Contact:</string>
+    <string name="rango">Price range:</string>
+    <string name="telefon">Contact number:</string>
+    <string name="plato">Recomended dish:</string>
+    <string name="nombre">Name:</string>
+
+</resources>

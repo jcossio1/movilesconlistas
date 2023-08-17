@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">turistiandov2</string>
+    <string name="hoteles">Nel nostro paese troverai una vasta gamma di hotel, molto confortevoli, puliti e a prezzi accessibili. I nostri hotel offrono servizio ristorante, pranzo a buffet, piscina, sauna, palestra e una vasta gamma di cose da scoprire.</string>
+    <string name="restaurantes">Nei nostri ristoranti troverai una grande varietà di piatti. Puoi anche trovare diversi ristoranti con il cibo tipico del nostro paese e quelli ispirati ad altre regioni.</string>
+    <string name="sitios">Nel nostro piccolo paese troverai luoghi emblematici dove vivrai una giornata piena di momenti speciali.</string>
+    <string name="opcion1">Inglese</string>
+    <string name="opcion2">Italiano</string>
+    <string name="opcion3">Spagnolo</string>
+    <string name="opcion4">Su di Me</string>
+
+    <string name="usuario">NOME UTENTE</string>
+    <string name="contraseña">CONTRASENI</string>
+    <string name="ingresar">ACCEDI</string>
+    <string name="hotele">Hotel</string>
+    <string name="restaurante">Ristoranti</string>
+    <string name="sitio">Luoghi</string>
+    <string name="ver">Vedi di più</string>
+    <string name="bienvenido">Benvenuto</string>
+    <string name="sobremi">Ciao, sono Juan, uno studente di programmazione con conoscenze di base in linguaggi come Java, CSS, HTML, Android Studio, SQL Server e JavaScript. Inoltre, sono anche un artista 3D con conoscenze avanzate in programmi come Maya, 3Ds Max, ZBrush, Vray, Solidworks e Substance Painter. :)</string>
+    <string name="contacto">Conttato:</string>
+    <string name="rango">fascia di prezzo:</string>
+    <string name="telefon">Telefoni:</string>
+    <string name="plato">piatto consigliato:</string>
+    <string name="nombre">Nome:</string>
+
+
+</resources>
