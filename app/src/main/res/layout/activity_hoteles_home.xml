@@ -54,6 +54,7 @@
 
         />
     <Button
+        android:id="@+id/botonvermas"
         android:layout_width="500dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
