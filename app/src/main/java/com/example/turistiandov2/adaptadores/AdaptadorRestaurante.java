@@ -61,6 +61,8 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
         TextView precioRestaurante;
         TextView contactoRestaurante;
 
+        TextView platoRestaurante;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -68,6 +70,8 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             nombreRestaurante = itemView.findViewById(R.id.nombreListaRestaurante);
             precioRestaurante = itemView.findViewById(R.id.precioListaRestaurante);
             contactoRestaurante = itemView.findViewById(R.id.telefonoListaRestaurante);
+            platoRestaurante = itemView.findViewById(R.id.platilloListaRestaurante);
+
 
         }
 
@@ -76,6 +80,7 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             nombreRestaurante.setText(moldeRestaurante.getNombre());
             precioRestaurante.setText(moldeRestaurante.getRangoPrecio());
             contactoRestaurante.setText(moldeRestaurante.getTelefono());
+            platoRestaurante.setText(moldeRestaurante.getPlatoRecomendado());
         }
     }
 }

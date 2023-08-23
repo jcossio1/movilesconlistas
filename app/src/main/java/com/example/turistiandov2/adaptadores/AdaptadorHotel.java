@@ -64,7 +64,7 @@ public class AdaptadorHotel extends RecyclerView.Adapter<AdaptadorHotel.viewHold
             fotoHotel=itemView.findViewById(R.id.fotoListaHotel);
             nombreHotel=itemView.findViewById(R.id.nombreListaHotel);
             precioHotel=itemView.findViewById(R.id.precioListaHotel);
-            contactoHotel=itemView.findViewById(R.id.contactoListaHotel);
+            contactoHotel=itemView.findViewById(R.id.telefonoListaHotel);
 
         }
 
@@ -72,7 +72,7 @@ public class AdaptadorHotel extends RecyclerView.Adapter<AdaptadorHotel.viewHold
             fotoHotel.setImageResource(moldeHotel.getFoto());
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText(moldeHotel.getPrecio());
-            contactoHotel.setText(moldeHotel.getPrecio());
+            contactoHotel.setText(moldeHotel.getTelefono());
         }
     }
 }
