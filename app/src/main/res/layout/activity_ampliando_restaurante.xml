@@ -4,6 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/hotelbg"
     tools:context=".AmpliandoRestaurante">
+
+    <ImageView
+        android:id="@+id/imagenAmpliandoRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h1"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        />
+
+    <TextView
+        android:id="@+id/ampliandoNameRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tradiciones Café"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imagenAmpliandoRestaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        />
+
+    <TextView
+
+        android:id="@+id/ampliandoPrecioRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$80.000"
+        android:textSize="35dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/ampliandoNameRestaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/ampliandoTelRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="322-595-0033"
+        android:textSize="35dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/ampliandoPrecioRestaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/ampliandoInfoRestaurante"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        android:textSize="25dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/ampliandoTelRestaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:textColor="@color/black"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/ampliandoInfoRestaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Reservar"
+        android:backgroundTint="@color/hoteles"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

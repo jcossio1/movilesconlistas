@@ -80,7 +80,8 @@ public class AdaptadorTurismo extends RecyclerView.Adapter<AdaptadorTurismo.view
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(itemView.getContext(), AmpliandoHotel.class);
+                    Intent intent = new Intent(itemView.getContext(), AdaptadorTurismo.class);
+                    intent.putExtra("datosturismo",moldeTurismo);
                     itemView.getContext().startActivity(intent);
 
                 }

@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.turistiandov2.AmpliandoHotel;
+import com.example.turistiandov2.AmpliandoRestaurante;
 import com.example.turistiandov2.R;
 import com.example.turistiandov2.moldes.MoldeRestaurante;
 import com.example.turistiandov2.moldes.MoldeRestaurante;
@@ -87,7 +88,8 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(itemView.getContext(), AmpliandoHotel.class);
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoRestaurante.class);
+                    intent.putExtra("datosrestaurante",moldeRestaurante);
                     itemView.getContext().startActivity(intent);
 
                 }
