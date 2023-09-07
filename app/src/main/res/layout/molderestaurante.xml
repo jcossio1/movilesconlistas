@@ -13,7 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
+        <ImageView
+            android:id="@+id/imagenListaRestaurante"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:src="@drawable/r1"
 
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:scaleType="fitXY"
+
+            />
         <TextView
             android:id="@+id/nombreListaRestaurante"
             android:layout_width="match_parent"
@@ -21,48 +33,41 @@
             android:text="Desde la raiz"
             android:textSize="28dp"
             android:textStyle="bold"
-            />
-
-        <ImageView
-            android:id="@+id/imagenListaRestaurante"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:src="@drawable/r1"
-            app:layout_constraintTop_toBottomOf="@id/nombreListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:scaleType="fitXY"
-            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintVertical_bias="0"
             />
+
+
 
         <TextView
             android:id="@+id/rangoListaRestaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/imagenListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/nombreListaRestaurante"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/rango"
             android:textSize="23dp"
-            app:layout_constraintVertical_bias="0.5"
+
             app:layout_constraintHorizontal_bias="0"
             />
         <TextView
             android:id="@+id/precioListaRestaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/imagenListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/nombreListaRestaurante"
             app:layout_constraintStart_toEndOf="@+id/rangoListaRestaurante"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="15.000 - 60.000 "
             android:textSize="23dp"
-            app:layout_constraintVertical_bias="0.5"
+
             app:layout_constraintHorizontal_bias="0.2"
             />
 
@@ -70,27 +75,26 @@
             android:id="@+id/telefonoListaRestaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/rangoListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/rangoListaRestaurante"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/telefon"
             android:textSize="23dp"
-            app:layout_constraintVertical_bias="0.55"
             app:layout_constraintHorizontal_bias="0"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/precioListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/telefonoListaRestaurante"
+
+            app:layout_constraintTop_toBottomOf="@+id/precioListaRestaurante"
+         app:layout_constraintStart_toEndOf="@+id/telefonoListaRestaurante"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="3225950033 "
             android:textSize="23dp"
-            app:layout_constraintVertical_bias="0.55"
+
             app:layout_constraintHorizontal_bias="0.1"
             />
 
@@ -98,29 +102,30 @@
             android:id="@+id/platoListaRestaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/rangoListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintTop_toBottomOf=""
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/plato"
             android:textSize="23dp"
-            app:layout_constraintVertical_bias="0.6"
+
             app:layout_constraintHorizontal_bias="0"
             />
         <TextView
             android:id="@+id/platilloListaRestaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/rangoListaRestaurante"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@id/platoListaRestaurante"
+
+            app:layout_constraintTop_toBottomOf="@+id/telefonoListaRestaurante"
+           app:layout_constraintStart_toEndOf="@+id/platoListaRestaurante"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="Arepa de huevo"
             android:textSize="23dp"
-            app:layout_constraintVertical_bias="0.6"
-            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintVertical_bias="1.5"
+
+
             />
 
 

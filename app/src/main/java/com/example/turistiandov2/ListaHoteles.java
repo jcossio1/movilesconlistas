@@ -33,11 +33,12 @@ public class ListaHoteles extends AppCompatActivity {
 
     private void llenarListaConDatos() {
 
-        listaHotel.add(new MoldeHotel("Tradiciones Café Hotel", "$80.000", "3225950033", R.drawable.h1 ));
-        listaHotel.add(new MoldeHotel("Hotel el volado", "$20.000", "3225958080", R.drawable.h2 ));
-        listaHotel.add(new MoldeHotel("Garavito Hotel", "$100.000", "3224569033", R.drawable.h3 ));
-        listaHotel.add(new MoldeHotel("Fragancia Hotel", "$120.000", "323590357", R.drawable.h4 ));
-        listaHotel.add(new MoldeHotel("Camino a santafe Hotel", "$87.000", "3225950033", R.drawable.h5 ));
+        listaHotel.add(new MoldeHotel("Tradiciones Café Hotel", "$80.000", "3225950033", R.drawable.h1, "hotel hermoso y agradable", R.drawable.h2 ));
+        listaHotel.add(new MoldeHotel("Hotel el volado", "$20.000", "3225958080", R.drawable.h2, "El hotel huele maluco", R.drawable.h3 ));
+        listaHotel.add(new MoldeHotel("Garavito Hotel", "$100.000", "3224569033", R.drawable.h3 , "hotel hermoso y agradable", R.drawable.h2 ));
+        listaHotel.add(new MoldeHotel("Fragancia Hotel", "$120.000", "323590357", R.drawable.h4 , "hotel hermoso y agradable", R.drawable.h2));
+        listaHotel.add(new MoldeHotel("Camino a santafe Hotel", "$87.000", "3225950033", R.drawable.h5 , "hotel hermoso y agradable", R.drawable.h2));
+
 
     }
 }

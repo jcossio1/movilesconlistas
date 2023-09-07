@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.turistiandov2.AmpliandoHotel;
+import com.example.turistiandov2.AmpliandoTurismo;
 import com.example.turistiandov2.R;
 import com.example.turistiandov2.moldes.MoldeTurismo;
 import com.example.turistiandov2.moldes.MoldeTurismo;
@@ -75,7 +75,7 @@ public class AdaptadorTurismo extends RecyclerView.Adapter<AdaptadorTurismo.view
             fotoTurismo.setImageResource(moldeTurismo.getFoto());
             nombreTurismo.setText(moldeTurismo.getNombre());
             precioTurismo.setText(moldeTurismo.getPrecio());
-            contactoTurismo.setText(moldeTurismo.getPrecio());
+            contactoTurismo.setText(moldeTurismo.getContacto());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
