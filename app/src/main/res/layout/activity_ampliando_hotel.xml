@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/imagenAmpliando"
-        android:layout_width="400dp"
-        android:layout_height="230dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:src="@drawable/r1"
 
         android:scaleType="fitXY"
@@ -22,7 +22,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+    <ImageView
+        android:id="@+id/imagenAmpliandoDos"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/r1"
+
+        android:scaleType="fitXY"
+
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="1"
         />
 
     <TextView
@@ -30,9 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Desde la raiz"
-        android:textSize="50dp"
+        android:textSize="35dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imagenAmpliando"
+        app:layout_constraintTop_toBottomOf="@+id/imagenAmpliandoDos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rango de precio: $15.000-60.000"
-        android:textSize="29dp"
+        android:textSize="26dp"
 
         app:layout_constraintTop_toBottomOf="@+id/ampliandoName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="322-595-0033"
-        android:textSize="35dp"
+        android:textSize="26dp"
 
         app:layout_constraintTop_toBottomOf="@+id/ampliandoPrecio"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,7 +98,7 @@
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        android:textSize="25dp"
+        android:textSize="20dp"
 
         app:layout_constraintTop_toBottomOf="@+id/ampliandoTel"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,6 +108,23 @@
         android:textColor="@color/black"
         android:fontFamily="cursive"
         android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/estrellasHotel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/es1"
+
+
+
+
+        app:layout_constraintTop_toBottomOf="@id/ampliandoInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0"
         />
 
     <Button

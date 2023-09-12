@@ -24,8 +24,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:scaleType="fitXY"
-
+             app:layout_constraintVertical_bias="0"
             />
+
         <TextView
             android:id="@+id/nombreListaRestaurante"
             android:layout_width="match_parent"
@@ -37,7 +38,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0"
+            app:layout_constraintVertical_bias="0.6"
             />
 
 
@@ -53,7 +54,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/rango"
             android:textSize="23dp"
-
+            app:flow_verticalBias="0"
             app:layout_constraintHorizontal_bias="0"
             />
         <TextView
@@ -103,13 +104,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:layout_constraintTop_toBottomOf=""
+            app:layout_constraintTop_toBottomOf="@+id/telefonoListaRestaurante"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/plato"
             android:textSize="23dp"
-
+            app:flow_verticalBias="0"
             app:layout_constraintHorizontal_bias="0"
             />
         <TextView
@@ -117,7 +118,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            app:layout_constraintTop_toBottomOf="@+id/telefonoListaRestaurante"
            app:layout_constraintStart_toEndOf="@+id/platoListaRestaurante"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

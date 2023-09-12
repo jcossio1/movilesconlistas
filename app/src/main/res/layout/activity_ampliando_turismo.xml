@@ -11,9 +11,10 @@
 
     <ImageView
         android:id="@+id/imagenAmpliandoTurismo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="170dp"
         android:src="@drawable/s1"
+        android:scaleType="fitXY"
 
 
         app:layout_constraintTop_toTopOf="parent"
@@ -28,13 +29,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cataratas del niagara"
-        android:textSize="50dp"
+        android:textSize="45dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/imagenAmpliandoTurismo"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintVertical_bias="0.366"
         android:textColor="@color/black"
         android:fontFamily="cursive"
         />

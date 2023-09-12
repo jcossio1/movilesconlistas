@@ -26,7 +26,7 @@ public class AmpliandoTurismo extends AppCompatActivity {
         fotoAmpliandoTurismo=findViewById(R.id.imagenAmpliandoTurismo);
         nombreAmpliandoTurismo=findViewById(R.id.ampliandoNameTurismo);
 
-        moldeTurismo=(MoldeTurismo) getIntent().getSerializableExtra("datoshotel");
+        moldeTurismo=(MoldeTurismo) getIntent().getSerializableExtra("datosturismo");
 
 
         fotoAmpliandoTurismo.setImageResource(moldeTurismo.getFoto());
