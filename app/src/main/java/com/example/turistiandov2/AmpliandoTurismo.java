@@ -17,6 +17,9 @@ public class AmpliandoTurismo extends AppCompatActivity {
 
     ImageView fotoAmpliandoTurismo;
     TextView nombreAmpliandoTurismo;
+    TextView reseñaTurismo;
+    ImageView imagenDosTurimo;
+    ImageView estrellasTurismo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +28,17 @@ public class AmpliandoTurismo extends AppCompatActivity {
 
         fotoAmpliandoTurismo=findViewById(R.id.imagenAmpliandoTurismo);
         nombreAmpliandoTurismo=findViewById(R.id.ampliandoNameTurismo);
+        reseñaTurismo=findViewById(R.id.ampliandoInfoTurismo);
+        imagenDosTurimo=findViewById(R.id.imagenAmpliandoSitiDos);
+        estrellasTurismo=findViewById(R.id.estrellasSitio);
 
         moldeTurismo=(MoldeTurismo) getIntent().getSerializableExtra("datosturismo");
 
 
         fotoAmpliandoTurismo.setImageResource(moldeTurismo.getFoto());
         nombreAmpliandoTurismo.setText(moldeTurismo.getNombre());
-
+        reseñaTurismo.setText(moldeTurismo.getReseñaTurismo());
+        imagenDosTurimo.setImageResource(moldeTurismo.getFoto2());
+        estrellasTurismo.setImageResource(moldeTurismo.getEstrellasTurism());
     }
 }

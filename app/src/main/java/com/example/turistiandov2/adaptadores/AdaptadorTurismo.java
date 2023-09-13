@@ -1,6 +1,7 @@
 package com.example.turistiandov2.adaptadores;
 
 import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,6 +62,7 @@ public class AdaptadorTurismo extends RecyclerView.Adapter<AdaptadorTurismo.view
         TextView nombreTurismo;
         TextView precioTurismo;
         TextView contactoTurismo;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -69,6 +71,7 @@ public class AdaptadorTurismo extends RecyclerView.Adapter<AdaptadorTurismo.view
             precioTurismo=itemView.findViewById(R.id.precioListaSitios);
             contactoTurismo=itemView.findViewById(R.id.contactoListaSitios);
 
+
         }
 
         public void actualizarDatos(MoldeTurismo moldeTurismo) {
@@ -76,6 +79,8 @@ public class AdaptadorTurismo extends RecyclerView.Adapter<AdaptadorTurismo.view
             nombreTurismo.setText(moldeTurismo.getNombre());
             precioTurismo.setText(moldeTurismo.getPrecio());
             contactoTurismo.setText(moldeTurismo.getContacto());
+
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

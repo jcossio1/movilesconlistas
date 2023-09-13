@@ -34,11 +34,15 @@ public class lista_restaurante extends AppCompatActivity {
 
     private void llenarListaConDatos() {
 
-        listaRestaurante.add(new MoldeRestaurante("desde la raiz", "3225950033", "$15000-60000", "Arepa de huevo", R.drawable.r1));
-        listaRestaurante.add(new MoldeRestaurante("Energy", "3226667733", "$20000-100000", "ceviche", R.drawable.r2));
-        listaRestaurante.add(new MoldeRestaurante("ThinkStation", "3226799973", "$22000-90000", "Carne de burro", R.drawable.r3));
-        listaRestaurante.add(new MoldeRestaurante("Amper", "3229890044", "$18000-60000", "caviar", R.drawable.r4));
-        listaRestaurante.add(new MoldeRestaurante("Galeria", "3228944433", "$30000-180000", "Solomo", R.drawable.r5));
+        listaRestaurante.add(new MoldeRestaurante("desde la raiz", "3225950033", "$15000-60000", "Arepa de huevo", R.drawable.r1, R.drawable.re11, R.drawable.es5,"Visite colombia en mis vacaciones y me recomendaron visitar este Lugar, Definitivamente los extrañare ! El servicio de las chicas es excelente y la comida demasiado sabrosa."));
+        listaRestaurante.add(new MoldeRestaurante("Energy", "3226667733", "$20000-100000", "ceviche", R.drawable.r2, R.drawable.re22, R.drawable.es1,"Pésima atención, una de las personas que cobro, nublo la experiencia, grosera ,displicente, agresiva.\n" +
+                "No incluyeron algo en la cuenta,y en forma muy grosera y mal educada, se nos acerco y exigió pagar , nosotros no sabiamos, que no habían incluido ese rublo."));
+
+        listaRestaurante.add(new MoldeRestaurante("ThinkStation", "3226799973", "$22000-90000", "Carne de burro", R.drawable.r3, R.drawable.re33, R.drawable.es2,"Todos las veces que he venido he disfrutado de la comida y del ambiente de este lugar. Desafortunadamente la ultima vez el servicio al cliente dejo mucho que desear."));
+
+        listaRestaurante.add(new MoldeRestaurante("Amper", "3229890044", "$18000-60000", "caviar", R.drawable.r4, R.drawable.re44, R.drawable.es3,"delicioso tdo excelente la comida el servicio todo, un lugar q sin duda tienen q visita"));
+
+        listaRestaurante.add(new MoldeRestaurante("Galeria", "3228944433", "$30000-180000", "Solomo", R.drawable.r5, R.drawable.re44, R.drawable.es4,"Un lugar con un ambiente tranquilo y perfecto para venir con tu pareja. Los platos son deliciosos y manejan muy bien los tiempos."));
 
 
     }

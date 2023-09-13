@@ -9,16 +9,22 @@ public class MoldeTurismo implements Serializable {
     private String telefono;
     private String precio;
     private Integer foto;
+    private String reseñaTurismo;
+    private Integer foto2;
+    private Integer estrellasTurism;
 
     public MoldeTurismo() {
     }
 
-    public MoldeTurismo(String nombre, String contacto, String telefono, String precio, Integer foto) {
+    public MoldeTurismo(String nombre, String contacto, String telefono, String precio, Integer foto, String reseñaTurismo, Integer foto2, Integer estrellasTurism) {
         this.nombre = nombre;
         this.contacto = contacto;
         this.telefono = telefono;
         this.precio = precio;
         this.foto = foto;
+        this.reseñaTurismo = reseñaTurismo;
+        this.foto2 = foto2;
+        this.estrellasTurism = estrellasTurism;
     }
 
     public String getNombre() {
@@ -59,5 +65,29 @@ public class MoldeTurismo implements Serializable {
 
     public void setFoto(Integer foto) {
         this.foto = foto;
+    }
+
+    public String getReseñaTurismo() {
+        return reseñaTurismo;
+    }
+
+    public void setReseñaTurismo(String reseñaTurismo) {
+        this.reseñaTurismo = reseñaTurismo;
+    }
+
+    public Integer getFoto2() {
+        return foto2;
+    }
+
+    public void setFoto2(Integer foto2) {
+        this.foto2 = foto2;
+    }
+
+    public Integer getEstrellasTurism() {
+        return estrellasTurism;
+    }
+
+    public void setEstrellasTurism(Integer estrellasTurism) {
+        this.estrellasTurism = estrellasTurism;
     }
 }

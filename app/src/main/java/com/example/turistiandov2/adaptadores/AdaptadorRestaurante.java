@@ -63,7 +63,6 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
         TextView nombreRestaurante;
         TextView precioRestaurante;
         TextView contactoRestaurante;
-
         TextView platoRestaurante;
 
         public viewHolder(@NonNull View itemView) {
@@ -84,6 +83,7 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             precioRestaurante.setText(moldeRestaurante.getRangoPrecio());
             contactoRestaurante.setText(moldeRestaurante.getTelefono());
             platoRestaurante.setText(moldeRestaurante.getPlatoRecomendado());
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
