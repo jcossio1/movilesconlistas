@@ -1,14 +1,21 @@
 package com.example.turistiandov2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.turistiandov2.adaptadores.AdaptadorHotel;
 import com.example.turistiandov2.adaptadores.AdaptadorRestaurante;
 import com.example.turistiandov2.moldes.MoldeHotel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -18,6 +25,8 @@ public class ListaHoteles extends AppCompatActivity {
 
     RecyclerView recyclerView;
 
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +35,39 @@ public class ListaHoteles extends AppCompatActivity {
         recyclerView = findViewById((R.id.recyclerViewHoteles));
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
 
+        db.collection("hoteles")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                String nombreHotel = document.getString("nombre");
+                                String descripcionHotel = document.getString("descripcion");
+                                String precioHotel = document.getString("precio");
+                                String telefonoHotel = document.getString("telefono");
+
+                                Toast.makeText(ListaHoteles.this, nombreHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaHoteles.this, descripcionHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaHoteles.this, precioHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaHoteles.this, telefonoHotel, Toast.LENGTH_SHORT).show();
+
+
+                            }
+                        } else {
+
+                        }
+                    }
+                });
+
+
         llenarListaConDatos();
         AdaptadorHotel adaptadorHotel = new AdaptadorHotel(listaHotel);
         recyclerView.setAdapter(adaptadorHotel);
     }
+
+
 
     private void llenarListaConDatos() {
 
